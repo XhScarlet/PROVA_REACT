@@ -26,7 +26,7 @@ export default function Signo() {
 
     return (
         <main>
-            <h3> ### SIGNO LIBRA ### </h3>
+            <h3 className='signo'> ### SIGNO LIBRA ### </h3>
             <p>Mês:</p>
             <input type='text' value={ mes } onChange={e => setMes (e.target.value)} />
 
@@ -36,7 +36,7 @@ export default function Signo() {
             <button onClick={Calcular} >Verificar Signo</button>
 
             <div>
-                <span>{`É do signo de Libra? ${Resul}`}</span>
+                <h4>{`É do signo de Libra? ${Resul}`}</h4>
             </div>
         </main>
     )

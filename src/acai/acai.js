@@ -28,7 +28,7 @@ export default function Acai() {
 
     return (
         <main>
-            <h3> ### AÇAI ### </h3>
+            <h3 className="acai"> ### AÇAI ### </h3>
 
             <p> Quantidade de açai pequenos:</p>
             <input type='Number' value={qtdPeq} onChange={e => setQtdPeq(Number(e.target.value))} />

@@ -27,7 +27,7 @@ export default function Gramas() {
 
     return (
         <main>
-            <h3> ### SORVETERIA ###  </h3>
+            <h3 className='gramas'> ### SORVETERIA ###  </h3>
 
             <div>
                 <p> Quantidade de gramas: </p>
