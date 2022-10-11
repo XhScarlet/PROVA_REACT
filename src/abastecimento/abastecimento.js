@@ -26,9 +26,9 @@ export default function Abastecimento(){
     }, [capac, consumo, dist, Qtdparadas])
 
     return(
-        <section className='sct'>
+        <section >
             <div>
-                <h2 className='tit'> Calcular quantidade de paradas </h2>
+                <h2 > Calcular quantidade de paradas </h2>
                 <p> Informe a capacidade do tanque em litros: </p>
                 <input type="number" value={capac} onChange={e => setCapac(Number(e.target.value))}/>
             
@@ -40,11 +40,11 @@ export default function Abastecimento(){
             </div>
 
             <div>
-                <button className='btt' onClick={totalParadas}> Calcular paradas </button>
+                <button  onClick={totalParadas}> Calcular paradas </button>
             </div>
 
             <div>
-                <h3 className='resp'> Você precisará fazer {Qtdparadas} paradas para abastecer </h3>
+                <h3> Você precisará fazer {Qtdparadas} paradas para abastecer </h3>
             </div>
         </section>
     )
