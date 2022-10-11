@@ -1,0 +1,37 @@
+
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+button,h3{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 40px;
+    
+}
+button{
+    box-shadow: 6px 9px 15px 1px #000;
+    height: 2.6em;
+    width: 20em;
+}
+button:hover{
+    box-shadow: 6px 9px 15px 1px #000;
+    background-color: #000;
+    color: aliceblue;
+    height: 2.9em;
+    width: 23em;
+}
+
+.home-botao{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 23em;
+}
+
+
+

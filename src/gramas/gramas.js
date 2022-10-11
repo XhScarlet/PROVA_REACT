@@ -1,12 +1,18 @@
 
 import { useState, useEffect } from 'react'
 import './gramas.scss'
+import React from 'react';
+import {useNavigate} from 'react-router-dom';
 
 
 export default function Gramas() {
 
     const [gramas, setGramas] = useState(0);
     const [resposta, setResposta] = useState(0);
+    const navigate = useNavigate();
+    function voltar(){
+        navigate('/');
+    }
 
     function Calcular() {
     let total = 0;

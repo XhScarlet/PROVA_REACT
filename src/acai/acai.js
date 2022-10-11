@@ -1,6 +1,8 @@
 
 import './acai.scss'
 import { useEffect, useState  } from 'react';
+import React from 'react';
+import {useNavigate} from 'react-router-dom';
 
 
 export default function Acai() {
@@ -9,6 +11,10 @@ export default function Acai() {
     const [ qtdGra, setQtdGra ] = useState(0);
     const [desconto, setDesconto] = useState(0);
     const [resultado, setResultado] = useState(0);
+    const navigate = useNavigate();
+    function voltar(){
+        navigate('/');
+    }
     
     function Calcular() {
 
@@ -28,7 +34,7 @@ export default function Acai() {
 
     return (
         <main>
-            <h3 className="acai"> ### AÇAI ### </h3>
+            <h1 className="acai"> ### AÇAI ### </h1>
 
             <p> Quantidade de açai pequenos:</p>
             <input type='Number' value={qtdPeq} onChange={e => setQtdPeq(Number(e.target.value))} />

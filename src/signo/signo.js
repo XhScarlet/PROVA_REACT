@@ -1,6 +1,8 @@
 
-import { useEffect, useState } from 'react'
-import './signo.scss'
+import { useEffect, useState } from 'react';
+import './signo.scss';
+import React from 'react';
+import {useNavigate} from 'react-router-dom';
 
 
 export default function Signo() {
@@ -8,6 +10,10 @@ export default function Signo() {
     const [mes, setMes] = useState('');
     const [dia, setDia] = useState();
     const [Resul, setResul] = useState('Não');
+    const navigate = useNavigate();
+    function voltar(){
+        navigate('/');
+    }
 
     function Calcular() {
 
