@@ -44,6 +44,11 @@ export default function Signo() {
             <div>
                 <h4>{`É do signo de Libra? ${Resul}`}</h4>
             </div>
+            
+            <div className="espacamento-botao"> 
+                    <button onClick={voltar}>Voltar</button> 
+                </div> 
+  
         </main>
     )
 }

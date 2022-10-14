@@ -29,20 +29,30 @@ export default function Home(){
         navigate('/febre')
     }
 
+    function cinema(){
+        navigate('/cinema')
+    }
+
+    function orcamento(){
+        navigate('/orcamento')
+    }
+
     return(
         <main>
             <section>
                 <div>
-                    <h1 className="home">###     Bem vindo(a)!!!!   ###</h1>
-                    <h3>Selecione à página que gostariam de visitar:</h3>
+                    <h1 className="home">###   Bem vindo(a)!!!   ###</h1>
+                    <h3> Selecione à página que gostariam de visitar: </h3>
                 </div>
                 <div className="home-botao">
-                    <button onClick = {acai}> Açai</button>
-                    <button onClick = {gramas}> Gramas</button>
-                    <button onClick = {signo}> Signo</button>
-                    <button onClick = {salario}> Salário</button>
-                    <button onClick = {abastecimento}> Paradas</button>
-                    <button onClick = {febre}> Febre</button>
+                    <button onClick = {acai}> Açai </button>
+                    <button onClick = {gramas}> Gramas </button>
+                    <button onClick = {signo}> Signo </button>
+                    <button onClick = {salario}> Salário </button>
+                    <button onClick = {abastecimento}> Paradas </button>
+                    <button onClick = {febre}> Febre </button>
+                    <button onClick = {cinema}> Cinema </button>
+                    <button onClick = {orcamento}> Orçamento </button>
                 </div>
             </section>
         </main>

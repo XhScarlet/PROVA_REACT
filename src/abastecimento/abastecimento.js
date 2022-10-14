@@ -33,7 +33,7 @@ export default function Abastecimento(){
                 <input type="number" value={capac} onChange={e => setCapac(Number(e.target.value))}/>
             
                 <p> Informe o consumo por km: </p>
-                <input type="number" value={cons} onChange={e => setCons(Number(e.target.value))}/>
+                <input type="number" value={consumo} onChange={e => setConsumo(Number(e.target.value))}/>
             
                 <p> Informe a distância em km: </p>
                 <input type="number" value={dist} onChange={e => setDist(Number(e.target.value))}/>
@@ -46,6 +46,11 @@ export default function Abastecimento(){
             <div>
                 <h3> Você precisará fazer {Qtdparadas} paradas para abastecer </h3>
             </div>
+
+            <div className="espacamento-botao"> 
+                    <button onClick={voltar}>Voltar</button> 
+                </div> 
+  
         </section>
     )
 }

@@ -42,6 +42,10 @@ export default function Gramas() {
                     <span>O total à pagar é R$ {resposta}  </span>
                 </div>
             </div>
+            <div className="espacamento-botao"> 
+                    <button onClick={voltar}>Voltar</button> 
+                </div> 
+  
         </main>
     )
 }

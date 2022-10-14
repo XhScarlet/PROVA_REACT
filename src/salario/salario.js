@@ -1,13 +1,18 @@
 import { useState, useEffect } from 'react';
+import { useNavigate } from "react-router-dom"; 
 import './salario.scss';
 
-export default function calcularSalario(){
+export default function CalcularSalario(){
     const [ salario, setSalario ] = useState(0);
     const [ bonus, setBonus ] = useState(0);
     const [ desc, setDesc ] = useState(0);
     const [ totalSal, setTotalSal ] = useState(0);
+    const navigate = useNavigate();
+    function voltar(){
+        navigate('/');
+    }
 
-    function totalSalario(){
+    function TotalSalario(){
         let total = (salario * bonus) / 100;
         let desconto = (salario + total) - desc;
         
@@ -16,7 +21,7 @@ export default function calcularSalario(){
     }
 
     useEffect(() => {
-        totalSalario()
+        TotalSalario()
     }, [salario, bonus, desc])
 
     return(
@@ -34,12 +39,17 @@ export default function calcularSalario(){
             </div>
             
             <div>
-                <button className='btt' onClick={totalSalario}> Calcular salário líquido </button>
+                <button className='btt' onClick={TotalSalario}> Calcular salário líquido </button>
             </div>
 
             <div>
                 <h3 className='resp'> Seu salário líquido é de R${totalSal} </h3>
             </div>
+
+            <div className="espacamento-botao"> 
+                    <button onClick={voltar}>Voltar</button> 
+                </div> 
+  
         </section>
     )
 }

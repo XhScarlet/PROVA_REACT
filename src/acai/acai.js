@@ -51,6 +51,10 @@ export default function Acai() {
             <div>
             <span> Total à pagar é R$ {resultado} </span>
             </div>
+            <div className="espacamento-botao"> 
+                    <button onClick={voltar}>Voltar</button> 
+                </div> 
+  
         </main>
     )
 }
