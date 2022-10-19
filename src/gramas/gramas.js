@@ -43,7 +43,7 @@ export default function Gramas() {
                 </div>
             </div>
             <div className="espacamento-botao"> 
-                    <button onClick={voltar}>Voltar</button> 
+                    <button onClick={voltar}>Voltarr</button> 
                 </div> 
   
         </main>
