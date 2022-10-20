@@ -3,9 +3,9 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 export default function Matrizs(){
-    const [base, setbase] = useState();
-    const [alt, setaltura] = useState();
-    const [resposta, steResposta] = useState([]);
+    const [base, setBase] = useState();
+    const [altura, setAltura] = useState();
+    const [resposta, setResposta] = useState([]);
 
     function Matriz() {
         try{
@@ -20,10 +20,10 @@ export default function Matrizs(){
             for (let j = 0; j < alt; j++) {
                 matriz[j] = new Array (array);
             }}
-            steResposta(matriz);
+            setResposta(matriz);
         }
         catch{
-            steResposta("ugisaefgdsafhgiuo")
+            setResposta("ugisaefgdsafhgiuo")
         }
 
 
@@ -35,8 +35,8 @@ export default function Matrizs(){
         <main>
             <h1> Desenhar Retângulo: </h1>
 
-            <input type="text"  placeholder='Base:' value={base}  onChange={ e => setbase(Number(e.target.value))} />
-            <input type="text"  placeholder='Altura' value={alt}  onChange={ e => setaltura(Number(e.target.value))} />
+            <input type="text"  placeholder='Base:' value={base}  onChange={ e => setBase(Number(e.target.value))} />
+            <input type="text"  placeholder='Altura' value={alt}  onChange={ e => setAltura(Number(e.target.value))} />
             <button classname='btt'onClick={Matriz}> Faça!</button>
             <div className='resp'>{resposta.map(item => <p>{ item }</p>)}</div>
 

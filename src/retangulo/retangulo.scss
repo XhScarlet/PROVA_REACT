@@ -1,3 +1,11 @@
+main{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
 
 h1{
     display: flex;
@@ -26,11 +34,3 @@ h1{
 }
 
 
-.tudo-2{
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 15px;
-    margin-bottom: 50px;
-}

@@ -2,7 +2,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
-export default function Cafe(){
+export default function Cafezin(){
 
     const [alunos, setAlunos] = useState();
     const [capacidade, setCapacidade] = useState();;
@@ -38,8 +38,8 @@ export default function Cafe(){
 
 
     return(
-        <main className="tudo">
-            <section className="tudo-2">
+        <main>
+            <section className="tudo">
                 <h1> Calcular litros de café: </h1>
                 <input  placeholder="Quantidade de alunos" value={alunos} onChange={(e) => setAlunos(e.target.value)} />
                 <input  placeholder="Capacidade da cafeteira" value={capacidade} onChange={(e) => setCapacidade(e.target.value)} />
